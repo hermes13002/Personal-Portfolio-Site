@@ -333,7 +333,7 @@ const ContactSection: React.FC = () => {
                   <MapPin className="w-6 h-6" />
                 </div>
                 <div>
-                  <h4 className="text-lg font-semibold text-gray-900 mb-1 font-poppins">Venue</h4>
+                  <h4 className="text-lg font-semibold text-gray-900 mb-1 font-poppins">Location</h4>
                   {/* <p className="text-gray-700 font-ubuntu">Army Hall, LASU Epe Campus</p> */}
                   <p className="text-gray-700 font-ubuntu">Lagos State, Nigeria</p>
                 </div>

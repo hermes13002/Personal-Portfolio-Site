@@ -9,10 +9,10 @@ export const navigationItems: NavItem[] = [
     name: 'Projects',
     path: '/projects',
   },
-  {
-    name: 'About',
-    path: '/about',
-  },
+  // {
+  //   name: 'About',
+  //   path: '/about',
+  // },
   {
     name: 'Contact',
     path: '/contact',

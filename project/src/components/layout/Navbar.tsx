@@ -27,7 +27,7 @@ const Navbar: React.FC<NavbarProps> = () => {
         isScrolled ? 'bg-gray-900/90 backdrop-blur-md py-4 shadow-xl' : 'bg-transparent py-6'
       }`}
     >
-      <div className="container mx-auto px-1 md:px-1">
+      <div className="container mx-auto px-4 md:px-6">
         <div className="flex items-center justify-between">
           {/* <a href="/" className="text-4xl font-bold font-spacegrotesk text-white hover:text-violet-400 transition-colors">
             <span className="text-violet-500">{'<'}</span>EXC<span className="text-violet-500">{'/>'}</span>
@@ -38,7 +38,7 @@ const Navbar: React.FC<NavbarProps> = () => {
               src="/exc-logo.png"
               alt="Exc Logo"
               // className="mr-2 h-35"
-              style={{ height: 120 }}
+              style={{ height: 40 }}
             />
             {/* <a href="https://ibb.co/3KRQdyq">
               <img 
@@ -61,13 +61,6 @@ const Navbar: React.FC<NavbarProps> = () => {
               </a>
             ))}
             
-            {/* <button
-              onClick={toggleDarkMode}
-              className="p-2 rounded-full bg-gray-800 hover:bg-gray-700 transition-colors"
-              aria-label="Toggle dark mode"
-            >
-              {darkMode ? <Sun size={20} className="text-yellow-400" /> : <Moon size={20} className="text-blue-400" />}
-            </button> */}
           </div>
           
           <button
@@ -95,23 +88,6 @@ const Navbar: React.FC<NavbarProps> = () => {
                   {item.name}
                 </a>
               ))}
-              
-              {/* <button
-                onClick={toggleDarkMode}
-                className="flex items-center space-x-2 text-gray-300 hover:text-white font-medium py-2 transition-colors"
-              >
-                {darkMode ? (
-                  <>
-                    <Sun size={20} className="text-yellow-400" />
-                    <span>Light Mode</span>
-                  </>
-                ) : (
-                  <>
-                    <Moon size={20} className="text-blue-400" />
-                    <span>Dark Mode</span>
-                  </>
-                )}
-              </button> */}
             </div>
           </div>
         </div>

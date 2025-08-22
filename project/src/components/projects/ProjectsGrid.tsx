@@ -36,8 +36,8 @@ const ProjectsGrid: React.FC = () => {
                   onClick={() => setSelectedCategory(category.id)}
                   className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
                     selectedCategory === category.id
-                      ? 'bg-violet-600 text-white'
-                      : 'bg-gray-800 text-gray-300 hover:bg-gray-700'
+                      ? 'bg-violet-600 text-white font-ubuntu'
+                      : 'bg-gray-800 text-gray-300 hover:bg-gray-700 font-ubuntu'
                   }`}
                 >
                   {category.name}
@@ -61,7 +61,7 @@ const ProjectsGrid: React.FC = () => {
         
         {filteredProjects.length === 0 ? (
           <div className="text-center py-16">
-            <h3 className="text-xl font-bold text-white mb-2">No projects found</h3>
+            <h3 className="text-xl font-bold text-white mb-2 font-ubuntu">No projects found</h3>
             {/* <p className="text-gray-400">
               Try changing your search query or selecting a different category.
             </p> */}
@@ -100,14 +100,14 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
       </div>
       
       <div className="p-6">
-        <h3 className="text-xl font-bold text-white mb-2">{project.title}</h3>
-        <p className="text-gray-400 mb-4">{project.description}</p>
+        <h3 className="text-xl font-bold text-white mb-2 font-spacegrotesk">{project.title}</h3>
+        <p className="text-gray-400 mb-4 font-ubuntu">{project.description}</p>
         
         <div className="flex flex-wrap gap-2 mb-4">
           {project.technologies.map((tech) => (
             <span
               key={tech}
-              className="px-2 py-1 bg-gray-700 text-gray-300 text-xs rounded"
+              className="px-2 py-1 bg-gray-700 text-gray-300 text-xs rounded font-ubuntu"
             >
               {tech}
             </span>

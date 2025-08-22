@@ -57,22 +57,17 @@ export const skills: Skill[] = [
     level: 0
   },
   {
-    name: 'API', icon: 'CodeIcon',
+    name: 'RESTful API', icon: 'CodeIcon',
+    category: 'languages',
+    level: 0
+  },
+  {
+    name: 'Websockets', icon: 'CodeIcon',
     category: 'languages',
     level: 0
   },
   {
     name: 'Version control', icon: 'GitBranchIcon',
-    category: 'languages',
-    level: 0
-  },
-  {
-    name: 'Provider', icon: 'BoxIcon',
-    category: 'languages',
-    level: 0
-  },
-  {
-    name: 'GetX', icon: 'BoxIcon',
     category: 'languages',
     level: 0
   },
