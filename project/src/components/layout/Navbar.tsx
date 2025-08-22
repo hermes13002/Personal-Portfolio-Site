@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Moon, Sun, Menu, X } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { navigationItems } from '../../data/navigation';
 
 interface NavbarProps {
@@ -35,7 +35,7 @@ const Navbar: React.FC<NavbarProps> = () => {
 
           <div className="flex items-center">
             <img
-              src="/src/assets/exc-logo.png"
+              src="/assets/exc-logo.png"
               alt="Exc Logo"
               className="h-10 w-auto mr-2"
               style={{ maxHeight: 40 }}

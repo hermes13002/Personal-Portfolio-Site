@@ -2,6 +2,26 @@ import { Project } from '../types';
 
 export const projects: Project[] = [
   {
+    id: 'tech-law-app',
+    title: 'Tech Law App',
+    description: 'A mobile application that serves as a study aid and research assistant for law students.',
+    category: 'flutter',
+    technologies: ['Python', 'Dart', 'Flutter', 'Shelf', 'MongoDB', 'API'],
+    image: 'https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    github: 'https://github.com/hermes13002/Tech-Law-Chatbot',
+    featured: true,
+  },
+  {
+    id: 'quiz-app',
+    title: 'Quiz-ster',
+    description: 'A multi-choice quiz app with a sleek dark UI and engaging animations, providing a great user experience. Offers quizzes across various sections: General Knowledge, Football, Programming, and the Bible.',
+    category: 'flutter',
+    technologies: ['Flutter', 'Dart'],
+    image: 'https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    github: 'https://hermes13002.github.io/Quiz-Update/',
+    featured: true,
+  },
+  {
     id: 'crop-recommendation-system',
     title: 'Crop Recommendation System',
     description: 'A machine learning mobile application that recommends or predicts the type of crop users can cultivate in a particular location.',
@@ -30,16 +50,6 @@ export const projects: Project[] = [
     image: 'https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
     github: 'hhttps://hermes13002.github.io/Trange-app/',
     // demo: 'https://example.com',
-    featured: true,
-  },
-  {
-    id: 'quiz-app',
-    title: 'Quiz-ster',
-    description: 'A multi-choice quiz app with a sleek dark UI and engaging animations, providing a great user experience. Offers quizzes across various sections: General Knowledge, Football, Programming, and the Bible.',
-    category: 'flutter',
-    technologies: ['Flutter', 'Dart'],
-    image: 'https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-    github: 'https://hermes13002.github.io/Quiz-Update/',
     featured: true,
   },
   {
