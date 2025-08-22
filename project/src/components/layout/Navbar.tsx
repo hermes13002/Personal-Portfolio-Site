@@ -27,7 +27,7 @@ const Navbar: React.FC<NavbarProps> = () => {
         isScrolled ? 'bg-gray-900/90 backdrop-blur-md py-4 shadow-xl' : 'bg-transparent py-6'
       }`}
     >
-      <div className="container mx-auto px-4 md:px-6">
+      <div className="container mx-auto px-1 md:px-1">
         <div className="flex items-center justify-between">
           {/* <a href="/" className="text-4xl font-bold font-spacegrotesk text-white hover:text-violet-400 transition-colors">
             <span className="text-violet-500">{'<'}</span>EXC<span className="text-violet-500">{'/>'}</span>
@@ -35,10 +35,10 @@ const Navbar: React.FC<NavbarProps> = () => {
 
           <div className="flex items-center">
             <img
-              src="./src/assets/exc-logo.png"
+              src="/exc-logo.png"
               alt="Exc Logo"
-              className="h-10 w-auto mr-2"
-              style={{ maxHeight: 40 }}
+              // className="mr-2 h-35"
+              style={{ height: 120 }}
             />
             {/* <a href="https://ibb.co/3KRQdyq">
               <img 
