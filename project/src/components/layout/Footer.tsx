@@ -10,12 +10,20 @@ const Footer: React.FC = () => {
             <div className="flex items-center justify-center md:justify-start">
               {/* <span className="text-2xl font-bold text-white">Exc</span>
               <span className="text-xl text-orange-400 ml-1">Hackathon</span> */}
-               <img
+               {/* <img
                 src="/assets/exc-logo.png"
                 alt="EXC Logo"
                 className="h-10 w-auto mr-2"
                 style={{ maxHeight: 40 }}
+              /> */}
+              <a href="https://imgbb.com/">
+              <img 
+                src="https://i.ibb.co/xS4XcR0n/exc-logo.png" 
+                alt="exc-logo" 
+                className="h-10 w-auto mr-2"
+                style={{ maxHeight: 40 }}
               />
+            </a>
             </div>
             <p className="text-gray-400 mt-2 text-center md:text-left font-poppins">
               Building AI solutions with Flutter.

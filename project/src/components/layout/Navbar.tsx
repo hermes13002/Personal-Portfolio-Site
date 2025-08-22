@@ -34,12 +34,20 @@ const Navbar: React.FC<NavbarProps> = () => {
           </a> */}
 
           <div className="flex items-center">
-            <img
+            {/* <img
               src="/assets/exc-logo.png"
               alt="Exc Logo"
               className="h-10 w-auto mr-2"
               style={{ maxHeight: 40 }}
-            />
+            /> */}
+            <a href="https://imgbb.com/">
+              <img 
+                src="https://i.ibb.co/xS4XcR0n/exc-logo.png" 
+                alt="exc-logo" 
+                className="h-10 w-auto mr-2"
+                style={{ maxHeight: 40 }}
+              />
+            </a>
           </div>
           
           <div className="hidden md:flex items-center space-x-8">
