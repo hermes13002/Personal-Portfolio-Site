@@ -314,7 +314,7 @@ const ContactSection: React.FC = () => {
                 </div>
                 <div>
                   <h4 className="text-lg font-semibold text-gray-900 mb-1 font-poppins">Email</h4>
-                  <p className="text-gray-700 font-opensans">soaresayoigbala@gmail.com</p>
+                  <p className="text-gray-700 font-ubuntu">soaresayoigbala@gmail.com</p>
                 </div>
               </div>
               
@@ -324,7 +324,7 @@ const ContactSection: React.FC = () => {
                 </div>
                 <div>
                   <h4 className="text-lg font-semibold text-gray-900 mb-1 font-poppins">Phone</h4>
-                  <p className="text-gray-700 font-opensans">+234-9031945519</p>
+                  <p className="text-gray-700 font-ubuntu">+234-9031945519</p>
                 </div>
               </div>
               
@@ -334,8 +334,8 @@ const ContactSection: React.FC = () => {
                 </div>
                 <div>
                   <h4 className="text-lg font-semibold text-gray-900 mb-1 font-poppins">Venue</h4>
-                  {/* <p className="text-gray-700 font-opensans">Army Hall, LASU Epe Campus</p> */}
-                  <p className="text-gray-700 font-opensans">Lagos State, Nigeria</p>
+                  {/* <p className="text-gray-700 font-ubuntu">Army Hall, LASU Epe Campus</p> */}
+                  <p className="text-gray-700 font-ubuntu">Lagos State, Nigeria</p>
                 </div>
               </div>
             </div>
