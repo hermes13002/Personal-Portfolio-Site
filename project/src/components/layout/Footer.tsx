@@ -11,7 +11,7 @@ const Footer: React.FC = () => {
               {/* <span className="text-2xl font-bold text-white">Exc</span>
               <span className="text-xl text-orange-400 ml-1">Hackathon</span> */}
                <img
-                src="/src/assets/exc-logo.png"
+                src="/assets/exc-logo.png"
                 alt="EXC Logo"
                 className="h-10 w-auto mr-2"
                 style={{ maxHeight: 40 }}
