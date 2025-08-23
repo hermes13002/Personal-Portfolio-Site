@@ -342,7 +342,7 @@ const ContactSection: React.FC = () => {
 
             <div className="mt-8 flex flex-col md:flex-row md:space-x-4 space-y-2 md:space-y-0">
               <a
-                href="https://forms.gle/z258wJh7Vas1W3ZF9"
+                href="https://drive.google.com/drive/folders/1j2TLer4HnnfWMka0up0Fx3StYxYLZp6w?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-violet-600 hover:bg-violet-700 text-white px-6 py-3 rounded-lg font-spacegrotesk font-medium transition-colors shadow-md inline-block text-center"
@@ -350,7 +350,7 @@ const ContactSection: React.FC = () => {
                 Download CV
               </a>
               <a
-                href="https://drive.google.com/drive/folders/1RBu_yvnFR0QdVTZKPMxxtDJUC_XS2Tqd?usp=drive_link"
+                href="https://drive.google.com/drive/folders/1oclMI1xZ1lWiZyq5DgFvl3Id3RZ19Zc2?usp=sharing"
                 download
                 className="bg-white hover:bg-gray-100 text-violet-600 px-6 py-3 rounded-lg font-spacegrotesk font-medium transition-colors shadow-md inline-block border border-violet-600 text-center"
               >
