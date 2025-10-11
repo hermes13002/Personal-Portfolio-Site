@@ -1,5 +1,5 @@
 import React from 'react';
-import Contact from '../src/components/home/Contact';
+import ContactSection from '../home/Contact';
 
 const ContactPage: React.FC = () => {
   return (
@@ -14,8 +14,9 @@ const ContactPage: React.FC = () => {
           </p>
         </div>
       </section> */}
+
+      <ContactSection />
       
-      <Contact />
     </main>
   );
 };

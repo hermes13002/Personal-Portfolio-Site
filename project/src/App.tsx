@@ -2,9 +2,10 @@ import React, { useState, useEffect } from 'react';
 import Navbar from './components/layout/Navbar';
 import Footer from './components/layout/Footer';
 import HomePage from './pages/HomePage';
-import ProjectsPage from '../public/ProjectsPage';
 import AboutPage from './pages/AboutPage';
-import ContactPage from '../public/ContactPage';
+import ProjectsPage from './components/home/ProjectsPage';
+import ContactPage from './components/contact/ContactPage';
+import FeaturedProjects from './components/home/FeaturedProjects';
 
 function App() {
   const [darkMode, setDarkMode] = useState(true);
@@ -78,6 +79,8 @@ function App() {
         return <AboutPage />;
       case '/contact':
         return <ContactPage />;
+      case '/featuredProjects':
+        return <FeaturedProjects />;
       default:
         return <HomePage />;
     }

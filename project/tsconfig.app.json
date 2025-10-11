@@ -20,5 +20,5 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src", "public/ProjectsPage.tsx", "public/ContactPage.tsx"]
+  // "include": ["src", "public/ProjectsPage.tsx", "public/ContactPage.tsx"]
 }

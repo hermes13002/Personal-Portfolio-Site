@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import { Github, ExternalLink, Filter } from 'lucide-react';
+import { Github, ExternalLink } from 'lucide-react';
 import { projects } from '../../data/projects';
 import { Project } from '../../types';
 
 const ProjectsGrid: React.FC = () => {
   const [selectedCategory, setSelectedCategory] = useState<string>('all');
-  const [searchQuery, setSearchQuery] = useState<string>('');
+  const [searchQuery] = useState<string>('');
   
   const categories = [
     { id: 'all', name: 'All Projects' },

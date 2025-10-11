@@ -103,14 +103,14 @@ const Hero: React.FC = () => {
       />
       
       <div className="container mx-auto px-4 z-10">
-        <div className="max-w-3xl">
-          <h1 className="text-4xl md:text-6xl font-spacegrotesk font-bold text-white mb-6 animate-fadeIn">
+        <div className="max-w-4xl">
+          <h1 className="text-4xl md:text-5xl font-spacegrotesk font-bold text-white mb-6 animate-fadeIn">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-violet-400 to-indigo-600">
-              Flutter Developer
+              Software Developer
             </span>{' '}
             with a passion for{' '}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
-              AI & Flutter
+              AI & Mobile App Dev.
             </span>
           </h1>
           

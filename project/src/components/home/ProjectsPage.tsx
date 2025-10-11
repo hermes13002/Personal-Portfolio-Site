@@ -1,5 +1,5 @@
 import React from 'react';
-import ProjectsGrid from '../src/components/projects/ProjectsGrid';
+import ProjectsGrid from '../projects/ProjectsGrid';
 
 const ProjectsPage: React.FC = () => {
   return (
