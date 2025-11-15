@@ -57,6 +57,12 @@ const AboutMe: React.FC = () => {
               <div className="mt-8">
                 <a
                   href="/contact"
+                  onClick={(e: React.MouseEvent<HTMLAnchorElement>) => {
+                    if (e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey) return;
+                    e.preventDefault();
+                    window.history.pushState({}, '', '/contact');
+                    window.dispatchEvent(new PopStateEvent('popstate'));
+                  }}
                   className="block w-full py-3 bg-violet-600 hover:bg-violet-700 text-white font-medium rounded-lg transition-colors text-center"
                 >
                   Contact Me

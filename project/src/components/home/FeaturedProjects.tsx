@@ -85,6 +85,12 @@ const FeaturedProjects: React.FC = () => {
         <div className="mt-12 text-center">
           <a
             href="/projects"
+            onClick={(e: React.MouseEvent<HTMLAnchorElement>) => {
+              if (e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey) return;
+              e.preventDefault();
+              window.history.pushState({}, '', '/projects');
+              window.dispatchEvent(new PopStateEvent('popstate'));
+            }}
             className="inline-flex items-center gap-2 font-ubuntu text-violet-400 hover:text-violet-300 font-medium group"
           >
             View All Projects

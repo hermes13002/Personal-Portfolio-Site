@@ -55,6 +55,14 @@ const Navbar: React.FC<NavbarProps> = () => {
               <a
                 key={item.name}
                 href={item.path}
+                onClick={(e: React.MouseEvent<HTMLAnchorElement>) => {
+                  // Allow modifier clicks / middle clicks to open in new tab
+                  if (e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey) return;
+                  e.preventDefault();
+                  window.history.pushState({}, '', item.path);
+                  // Let App listen to popstate to update route
+                  window.dispatchEvent(new PopStateEvent('popstate'));
+                }}
                 className="text-gray-300 hover:text-white font-spacegrotesk font-medium transition-colors relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-violet-500 after:transition-all hover:after:w-full"
               >
                 {item.name}
@@ -82,8 +90,14 @@ const Navbar: React.FC<NavbarProps> = () => {
                 <a
                   key={item.name}
                   href={item.path}
+                  onClick={(e: React.MouseEvent<HTMLAnchorElement>) => {
+                    if (e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey) return;
+                    e.preventDefault();
+                    window.history.pushState({}, '', item.path);
+                    window.dispatchEvent(new PopStateEvent('popstate'));
+                    setIsMenuOpen(false);
+                  }}
                   className="text-gray-300 hover:text-white font-spacegrotesk font-medium py-2 transition-colors"
-                  onClick={() => setIsMenuOpen(false)}
                 >
                   {item.name}
                 </a>

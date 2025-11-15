@@ -121,6 +121,12 @@ const Hero: React.FC = () => {
           <div className="flex flex-wrap gap-4 mb-12 animate-fadeIn animation-delay-400 font-ubuntu">
             <a
               href="/projects"
+              onClick={(e: React.MouseEvent<HTMLAnchorElement>) => {
+                if (e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey) return;
+                e.preventDefault();
+                window.history.pushState({}, '', '/projects');
+                window.dispatchEvent(new PopStateEvent('popstate'));
+              }}
               className="px-6 py-3 bg-violet-600 hover:bg-violet-700 text-white font-medium rounded-full transition-colors flex items-center gap-2 group"
             >
               View My Work

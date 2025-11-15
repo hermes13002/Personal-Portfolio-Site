@@ -10,6 +10,19 @@ export const projects: Project[] = [
     // image: 'https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
     image: '/tech_law.jpg',
     github: 'https://github.com/hermes13002/Tech-Law-Chatbot',
+    demo: 'https://appetize.io/app/b_gefzu5z6g7fio5whqk4efpdl6e',
+    featured: true,
+  },
+  {
+    id: 'fsa',
+    title: 'F S A • Flutter Smart Assets',
+    description:
+      'FSA is a lightweight CLI that scans a Flutter project\'s assets folders, updates pubspec.yaml with correct indentation, and generates a strongly-typed `app_assets.dart` file using UPPERCASE constants (format suffixes preserved). Generated files include a useful summary header.',
+    category: 'flutter',
+    technologies: ['Dart', 'Flutter', 'CLI'],
+    image: '/fsa.png',
+    github: 'https://github.com/hermes13002/fsa',
+    demo: 'https://pub.dev/packages/fsa',
     featured: true,
   },
   {
@@ -19,6 +32,7 @@ export const projects: Project[] = [
     category: 'flutter',
     technologies: ['Flutter', 'Dart'],
     image: '/quizster.png',
+    demo: 'https://hermes13002.github.io/Quiz-Update/',
     github: 'https://hermes13002.github.io/Quiz-Update/',
     featured: true,
   },
@@ -30,7 +44,7 @@ export const projects: Project[] = [
     technologies: ['Python', 'Dart', 'Flutter', 'Flask', 'API'],
     image: 'https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
     github: 'https://github.com/hermes13002/Crop-Recommendation-System',
-    featured: true,
+    featured: false,
   },
   {
     id: 'automated-diabetic-retinopathy-detection-app',
@@ -40,7 +54,7 @@ export const projects: Project[] = [
     technologies: ['Python', 'Dart', 'Flutter', 'Flask', 'Deep Learning'],
     image: 'https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
     // github: 'https://github.com/hermes13002/Crop-Recommendation-System',
-    featured: true,
+    featured: false,
   },
   {
     id: 'flutter-trange-app',
@@ -51,7 +65,7 @@ export const projects: Project[] = [
     image: 'https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
     github: 'hhttps://hermes13002.github.io/Trange-app/',
     // demo: 'https://example.com',
-    featured: true,
+    featured: false,
   },
   {
     id: 'flutter-ecommerce',
@@ -71,6 +85,52 @@ export const projects: Project[] = [
     technologies: ['Python', 'Django (Backend)', 'PostgreSQL (Database)', 'Render (Deployment)'],
     image: 'https://images.pexels.com/photos/1181271/pexels-photo-1181271.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
     github: 'https://github.com/hermes13002/Ecommerce-App-API-Django',
+    featured: false,
+  },
+  {
+    id: 'string-analyzer-api',
+    title: 'String Analyzer API',
+    description:
+      'A REST API built for the HNG Backend Track assessment that analyzes and stores information about strings (length, character counts, palindrome checks, etc.), exposing endpoints for analysis and persistence.',
+    category: 'python',
+    technologies: ['Python', 'Django (Backend)', 'REST', 'API'],
+    image: '/string_analyzer.png',
+    github: 'https://github.com/hermes13002/string_analyzer_project',
+    featured: false,
+  },
+  {
+    id: 'apwen-lasu-website',
+    title: 'APWEN LASU Website',
+    description:
+      "Official site for APWEN LASU's flagship event — a career-accelerating program that connects young African women in tech with mentorship, industry networks, and opportunities to pitch ideas to recruiters and partners.",
+    category: 'web',
+    technologies: ['HTML', 'CSS', 'TypeScript', 'JavaScript'],
+    image: '/apwen.png',
+    github: 'https://github.com/hermes13002/APWEN-Pitch-Deck-Website',
+    demo: 'https://apwen-pitch-deck-website.onrender.com/',
+    featured: true,
+  },
+  {
+    id: 'sbms',
+    title: 'AI-Driven Smart Battery Management System (SBMS)',
+    description:
+      'Hybrid IoT + ML system that monitors battery health, predicts degradation, and optimizes energy use. Includes a mobile app and a Dart (Shelf) backend; supports offline operation and cloud sync.',
+    category: 'ai-ml',
+    technologies: ['IoT', 'Machine Learning', 'Dart', 'Flutter', 'Shelf (Dart Backend)'],
+    image: '/sbms.png',
+    demo: 'https://appetize.io/app/b_bkuuqihkmz74sgl27xbqeshj6a',
+    featured: true,
+  },
+  {
+    id: 'nexus-hackathon-website',
+    title: 'Nexus Hackathon Website',
+    description:
+      'Designed and managed the single-page site for Nexus Hackathon 2.0 (SPE LASU). The site served as the official information hub — event overview, categories, eligibility, judging criteria, timeline, FAQs, speakers/judges, and a direct registration link.',
+    category: 'web',
+    technologies: ['HTML', 'CSS', 'TypeScript', 'JavaScript'],
+    image: '/nexus.png',
+    github: 'https://github.com/hermes13002/Nexus-Hackathon-Website',
+    demo: 'https://nexus-hackathon-website.onrender.com/',
     featured: true,
   },
 ];
