@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { ArrowRight, Github, Linkedin } from 'lucide-react';
+// import { Download } from 'lucide-react'; // Uncomment when CV/Resume buttons are enabled
 
 const Hero: React.FC = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -118,40 +119,64 @@ const Hero: React.FC = () => {
             Creating innovative solutions with Python, Machine Learning, and cross-platform Flutter applications.
           </p>
           
-          <div className="flex flex-wrap gap-4 mb-12 animate-fadeIn animation-delay-400 font-ubuntu">
-            <a
-              href="/projects"
-              onClick={(e: React.MouseEvent<HTMLAnchorElement>) => {
-                if (e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey) return;
-                e.preventDefault();
-                window.history.pushState({}, '', '/projects');
-                window.dispatchEvent(new PopStateEvent('popstate'));
-              }}
-              className="px-6 py-3 bg-violet-600 hover:bg-violet-700 text-white font-medium rounded-full transition-colors flex items-center gap-2 group"
-            >
-              View My Work
-              <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
-            </a>
+          <div className="animate-fadeIn animation-delay-400 font-ubuntu mb-12">
+            <div className="flex flex-wrap gap-4 mb-4">
+              <a
+                href="/projects"
+                onClick={(e: React.MouseEvent<HTMLAnchorElement>) => {
+                  if (e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey) return;
+                  e.preventDefault();
+                  window.history.pushState({}, '', '/projects');
+                  window.dispatchEvent(new PopStateEvent('popstate'));
+                }}
+                className="px-6 py-3 bg-violet-600 hover:bg-violet-700 text-white font-medium rounded-full transition-colors flex items-center gap-2 group"
+              >
+                View My Work
+                <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
+              </a>
+              
+              <a
+                href="https://github.com/hermes13002"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-6 py-3 hover:bg-gray-700 text-white font-medium rounded-full transition-colors flex items-center gap-2"
+              >
+                <Github size={20} />
+                {/* GitHub */}
+              </a>
+              
+              <a
+                href="http://www.linkedin.com/in/ayoigbala-soares-60b282218"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-6 py-3 hover:bg-gray-700 text-white font-medium rounded-full transition-colors flex items-center gap-2"
+              >
+                <Linkedin size={20} />
+                {/* LinkedIn */}
+              </a>
+            </div>
             
-            <a
-              href="https://github.com/hermes13002"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-6 py-3 hover:bg-gray-700 text-white font-medium rounded-full transition-colors flex items-center gap-2"
-            >
-              <Github size={20} />
-              {/* GitHub */}
-            </a>
-            
-            <a
-              href="http://www.linkedin.com/in/ayoigbala-soares-60b282218"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-6 py-3 hover:bg-gray-700 text-white font-medium rounded-full transition-colors flex items-center gap-2"
-            >
-              <Linkedin size={20} />
-              {/* LinkedIn */}
-            </a>
+            {/* <div className="flex flex-wrap gap-4">
+              <a
+                href="https://drive.google.com/drive/folders/1j2TLer4HnnfWMka0up0Fx3StYxYLZp6w?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-6 py-3 bg-indigo-600 hover:bg-indigo-700 text-white font-medium rounded-full transition-colors flex items-center gap-2"
+              >
+                <Download size={20} />
+                CV
+              </a>
+              
+              <a
+                href="https://drive.google.com/drive/folders/1oclMI1xZ1lWiZyq5DgFvl3Id3RZ19Zc2?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-6 py-3 border-2 border-violet-500 hover:bg-violet-600 text-white font-medium rounded-full transition-colors flex items-center gap-2"
+              >
+                <Download size={20} />
+                Resume
+              </a>
+            </div> */}
           </div>
         </div>
       </div>
