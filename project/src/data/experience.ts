@@ -1,3 +1,8 @@
+export interface ExperienceLink {
+  name: string;
+  url: string;
+}
+
 export interface Experience {
   id: string;
   company: string;
@@ -5,6 +10,7 @@ export interface Experience {
   period: string;
   description: string;
   achievements: string[];
+  links?: ExperienceLink[];
 }
 
 export const experiences: Experience[] = [
@@ -20,6 +26,10 @@ export const experiences: Experience[] = [
       'Utilizing a comprehensive Firebase suite (Crashlytics, Performance Monitoring, Remote Config) to monitor live release health, track app performance in real-time, and seamlessly push remote configurations to users.',
       'Managing cross-functional development lifecycles and version control via GitHub.',
     ],
+    links: [
+      { name: '01POS Admin', url: 'https://play.google.com/store/apps/details?id=net.onepos.app' },
+      { name: '01POS Checkout', url: 'https://play.google.com/store/apps/details?id=com.onetech.posapp' },
+    ],
   },
   {
     id: 'five-star-innovation',
@@ -33,6 +43,9 @@ export const experiences: Experience[] = [
       'Modernized a legacy app by updating packages, redesigning UI, and rewriting API integrations.',
       'Integrated REST APIs & WebSockets; managed state with GetX & Provider and implemented local caching.',
       'Collaborated using ClickUp/Git; contributed key technical solutions adopted by the team.',
+    ],
+    links: [
+      { name: 'MEGA Cheap Data', url: 'https://play.google.com/store/apps/details?id=a5starcompany.com.megacheapdata' },
     ],
   },
   {
@@ -62,3 +75,4 @@ export const experiences: Experience[] = [
     ],
   },
 ];
+

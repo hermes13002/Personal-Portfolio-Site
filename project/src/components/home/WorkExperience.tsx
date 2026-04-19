@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ChevronLeft, ChevronRight, Briefcase } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Briefcase, ExternalLink } from 'lucide-react';
 import { experiences } from '../../data/experience';
 
 const WorkExperience: React.FC = () => {
@@ -62,7 +62,28 @@ const WorkExperience: React.FC = () => {
                 </div>
               </div>
 
-              <p className="text-gray-400 font-ubuntu mb-6">{currentExperience.period}</p>
+              <div className="flex flex-wrap items-center gap-x-6 gap-y-2 mb-6">
+                <p className="text-gray-400 font-ubuntu">{currentExperience.period}</p>
+                {currentExperience.links && (
+                  <div className="flex items-center gap-2 bg-gray-800/50 px-3 py-1.5 rounded-md border border-gray-700/50">
+                    <span className="text-xs text-gray-400 font-ubuntu">Play Store:</span>
+                    <div className="flex flex-wrap gap-3 border-l border-gray-700 pl-3">
+                      {currentExperience.links.map((link, index) => (
+                        <a
+                          key={index}
+                          href={link.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="flex items-center gap-1.5 text-sm text-violet-400 hover:text-violet-300 transition-colors font-ubuntu font-medium"
+                        >
+                          <ExternalLink size={14} />
+                          {link.name}
+                        </a>
+                      ))}
+                    </div>
+                  </div>
+                )}
+              </div>
 
               <p className="text-gray-300 font-ubuntu text-lg mb-6">
                 {currentExperience.description}
@@ -84,11 +105,10 @@ const WorkExperience: React.FC = () => {
                 <button
                   key={index}
                   onClick={() => setCurrentIndex(index)}
-                  className={`w-2 h-2 rounded-full transition-all ${
-                    index === currentIndex
-                      ? 'bg-violet-500 w-8'
-                      : 'bg-gray-600 hover:bg-gray-500'
-                  }`}
+                  className={`w-2 h-2 rounded-full transition-all ${index === currentIndex
+                    ? 'bg-violet-500 w-8'
+                    : 'bg-gray-600 hover:bg-gray-500'
+                    }`}
                   aria-label={`Go to experience ${index + 1}`}
                 />
               ))}
