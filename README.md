@@ -33,7 +33,7 @@ You can view the live site here: [https://personal-portfolio-site-5w5s.onrender.
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/hermes13002/your-repo-name.git
+   git clone https://github.com/hermes13002/Personal-Portfolio-Site
    cd project
    ```
 2. Install dependencies:
