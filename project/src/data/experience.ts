@@ -9,6 +9,19 @@ export interface Experience {
 
 export const experiences: Experience[] = [
   {
+    id: '01-technologies',
+    company: '01 Technologies',
+    role: 'Lead Mobile Application Developer',
+    period: 'December 2025 - Present',
+    description: 'Led the end-to-end development of a dual-app ecosystem (01POS Admin & 01POS Checkout), driving both products from initial architecture to successful Play Store deployment within 5 months.',
+    achievements: [
+      'Led the end-to-end development of a dual-app ecosystem (01POS Admin & 01POS Checkout), driving both products from initial architecture to successful Play Store deployment within 5 months. Currently oversee post-launch updates, feature rollouts, and product scalability.',
+      'Architecting and maintaining an offline-first infrastructure to guarantee uninterrupted store operations for our users. This includes actively managing and expanding hardware integrations for Bluetooth/USB receipt printing on Sunmi and PAX POS devices.',
+      'Utilizing a comprehensive Firebase suite (Crashlytics, Performance Monitoring, Remote Config) to monitor live release health, track app performance in real-time, and seamlessly push remote configurations to users.',
+      'Managing cross-functional development lifecycles and version control via GitHub.',
+    ],
+  },
+  {
     id: 'five-star-innovation',
     company: '5 Star Innovation Company',
     role: 'Mobile App Developer',
